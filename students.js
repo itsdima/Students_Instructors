@@ -27,11 +27,11 @@ function Students_instructors(){
 	} 
  	console.log('Students'); 
  	for (var i = 0; i< users.Students.length; i++){
-   		console.log(i+1+' ' +'-',users.Students[i].first_name, users.Students[i].last_name,'-');
+   		console.log(i+1+' ' +'-',users.Students[i].first_name.toUpperCase(), users.Students[i].last_name.toUpperCase(),'-', users.Students[i].first_name.length+users.Students[i].last_name.length);
  	}
  	console.log('Instructors'); 
  	for (var x = 0; x< users.Instructors.length; x++){
-   		console.log(x+1 +' ' + '-',users.Instructors[x].first_name, users.Instructors[x].last_name, '-');
+   		console.log(x+1 +' ' + '-',users.Instructors[x].first_name.toUpperCase(), users.Instructors[x].last_name.toUpperCase(), '-', users.Instructors[x].first_name.length+users.Instructors[x].last_name.length);
  	}
 }
  
